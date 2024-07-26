@@ -26,7 +26,7 @@ def house_input():
     df = pd.DataFrame(feat, columns = cols)
     return df
 df = house_input()
-st.write(df)
+#st.write(df)
 
 def prepare(df):
     df1 = df.copy()
@@ -47,7 +47,7 @@ def prepare(df):
     df1 = pd.DataFrame(df1,columns=cols)
     return df1
 df1 = prepare(df)
-st.write(df1)
+#st.write(df1)
 
 # Make prediction
 predictions = model.predict(df1)
